@@ -7,7 +7,7 @@ export default function Home() {
       <div className="w-1/1 flex justify-center items-center">
         <Game />
       </div>
-      <div className="w-1/2 p-4 flex overflow-hidden">
+      <div className="w-1/2 flex overflow-hidden">
         <TransactionTable/>
       </div>
     </div>
