@@ -9,7 +9,7 @@ const Game = ({ rows = 5, cols = 5 }) => {
   const [moves, setMoves] = useState(0);
   const [isSolved, setIsSolved] = useState(false);
 
-  const toggleBox = (row, col) => {
+  const toggleBox = (row:number, col:number) => {
     if (isSolved) return;
 
     const newBoard = board.map((r, rIdx) =>
