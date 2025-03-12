@@ -8,7 +8,6 @@ const Game = ({ rows = 5, cols = 5 }) => {
   const [board, setBoard] = useState(createBoard());
   const [moves, setMoves] = useState(0);
   const [isSolved, setIsSolved] = useState(false);
-
   const toggleBox = (row:number, col:number) => {
     if (isSolved) return;
 
@@ -37,7 +36,7 @@ const Game = ({ rows = 5, cols = 5 }) => {
   };
 
   return (
-    <div className="game w-full gap-y-4.5 text-2xl">
+    <div className=" w-[90%] flex flex-col justify-center items-center h-[100%] gap-y-4.5 text-2xl">
       <h2>Tile Toggle Game</h2>
       <h2 className="text-yellow-300">Break Monad</h2>
       <p>Moves: {moves}</p>
